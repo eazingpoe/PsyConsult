@@ -1,0 +1,8 @@
+........................................................................ [100%]
+=============================== warnings summary ===============================
+agent/tools/vector_tool.py:6
+  /home/user/Downloads/PsyConsult-codex-hardening-baseline/agent/tools/vector_tool.py:6: DeprecationWarning: `langchain-community` is being sunset and is no longer actively maintained. See https://github.com/langchain-ai/langchain-community/issues/674 for details and migration guidance toward standalone integration packages.
+    from langchain_community.embeddings import DashScopeEmbeddings
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+72 passed, 1 warning in 3.69s

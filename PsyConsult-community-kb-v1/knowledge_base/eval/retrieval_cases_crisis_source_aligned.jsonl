@@ -1,0 +1,2 @@
+{"case_id": "KB031", "query": "如果我现在可能马上伤害自己怎么办？", "expected_source_ids": ["WHO_DEPRESSION_ZH_2026", "NIMH_ADULT_BSSA"], "expected_topic": "crisis_safety"}
+{"case_id": "KB032", "query": "朋友说不想活了，我应该怎么回应？", "expected_source_ids": ["WHO_DEPRESSION_ZH_2026", "NIMH_ADULT_BSSA"], "expected_topic": "crisis_safety"}

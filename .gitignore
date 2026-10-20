@@ -1,0 +1,80 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+front/clinical_cds/dist/
+logs/
+
+# Secrets
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local environment files and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local tool settings
+.claude/settings.local.json
+
+# Editor swap files
+*.swp
+*.swo
+
+# Local Claude settings in any directory
+**/.claude/settings.local.json
+
+# Local patient archive database and uploaded report files
+/data/
+
+# Automatic source backups created by the patient archive patcher
+/.backups/
+# Local secrets and configuration
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+# Python caches and test output
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# Frontend dependencies and build output
+dist/
+build/
+coverage/
+# Runtime logs and local data
+*.log
+*.sqlite
+*.sqlite3
+*.db
+uploads/
+patient_uploads/
+patient_data/
+clinical_data/
+datasets/
+data/
+vector_db/
+milvus_data/
+redis_data/
+chroma_db/
+qdrant_storage/
+# OS/editor files
+
+# Local backup files
+*.bak
+*.bak_*
+*.bak.*

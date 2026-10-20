@@ -1,0 +1,8 @@
+{"case_id": "KB014_R2_1", "query": "这几天睡得很少也不困，话特别多又兴奋，还冲动消费，该找谁评估？", "expected_source_ids": ["WHO_BIPOLAR_ZH_2025"], "expected_topic": "disorder_education"}
+{"case_id": "KB014_R2_2", "query": "精力突然很旺盛，睡眠需求下降，和以前很不一样，需要就医吗？", "expected_source_ids": ["WHO_BIPOLAR_ZH_2025"], "expected_topic": "disorder_education"}
+{"case_id": "KB021_R2_1", "query": "PHQ9最后一题选了1分，但总分不高，是否需要安全确认和专业帮助？", "expected_source_ids": ["PHQ9_KROENKE_2001", "NHC_12356_2024"], "expected_topic": "screening_scales"}
+{"case_id": "KB021_R2_2", "query": "第九题不是零，是不是就一定属于高危？该如何进一步求助？", "expected_source_ids": ["PHQ9_KROENKE_2001", "NHC_12356_2024"], "expected_topic": "screening_scales"}
+{"case_id": "KB038_R2_1", "query": "持续几个星期心情低落，工作效率下降，应该预约什么专业服务？", "expected_source_ids": ["WHO_DEPRESSION_ZH_2026", "NHC_SERVICES_2025"], "expected_topic": "help_seeking_resources"}
+{"case_id": "KB038_R2_2", "query": "一直没兴趣上班，情绪不好已经影响工作，去哪里做专业评估？", "expected_source_ids": ["WHO_DEPRESSION_ZH_2026", "NHC_SERVICES_2025"], "expected_topic": "help_seeking_resources"}
+{"case_id": "KB040_R2_1", "query": "精神障碍有哪些治疗、康复与社会支持措施？", "expected_source_ids": ["WHO_MENTAL_DISORDERS_ZH_2026"], "expected_topic": "mental_health_literacy"}
+{"case_id": "KB040_R2_2", "query": "精神健康问题是否可以接受心理治疗、康复和就业方面的支持？", "expected_source_ids": ["WHO_MENTAL_DISORDERS_ZH_2026"], "expected_topic": "mental_health_literacy"}

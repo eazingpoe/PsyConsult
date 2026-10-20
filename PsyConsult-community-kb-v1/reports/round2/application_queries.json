@@ -1,0 +1,311 @@
+{
+  "collection": "community_mental_health_docs_v1_0_3",
+  "embedding_model": "text-embedding-v3",
+  "scope": "Production query_vector_db + actual application prompt and LLM. Not HTTP/SSE, routing, or semantic-cache validation.",
+  "cases": [
+    {
+      "case_id": "KB014",
+      "query": "睡眠需求明显减少而且异常兴奋，需要注意什么？",
+      "complete_hit": true,
+      "evidence": {
+        "status": "success",
+        "query": "睡眠需求明显减少而且异常兴奋，需要注意什么？",
+        "retrieval": {
+          "backend": "Milvus",
+          "top_k": 3,
+          "score_field": "raw_score",
+          "score_note": "原始检索分数；其方向和含义取决于向量集合的距离度量及检索配置，不代表答案正确概率或置信度。"
+        },
+        "evidence": [
+          {
+            "rank": 1,
+            "source": "06_双相情感障碍科普.md",
+            "metadata": {
+              "doc_id": "bipolar_education_001",
+              "source_ids": "WHO_BIPOLAR_ZH_2025",
+              "source_url": "https://www.who.int/zh/news-room/fact-sheets/detail/bipolar-disorder",
+              "source_urls": "{\"WHO_BIPOLAR_ZH_2025\": \"https://www.who.int/zh/news-room/fact-sheets/detail/bipolar-disorder\"}",
+              "source_title": "双相情感障碍",
+              "section_path": "双相情感障碍科普：情绪发作与专业评估 > 睡眠需求减少、异常兴奋与专业求助",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "医学科普概述；不替代个体评估。",
+              "title": "双相情感障碍科普：情绪发作与专业评估",
+              "chunk_id": "249a8d41237a1c1969d6bdcd652267bc",
+              "publisher": "世界卫生组织"
+            },
+            "raw_score": 0.32732993364334106,
+            "content": "文档主题：双相情感障碍科普：情绪发作与专业评估\n章节：双相情感障碍科普：情绪发作与专业评估 > 睡眠需求减少、异常兴奋与专业求助\n\n睡得明显比平时少却仍精力旺盛，伴随异常兴奋、话多、思绪加快或冲动冒险，需要留意躁狂或轻躁狂的可能。睡眠需求减少不只是想睡却睡不着；应结合情绪、活动和判断力的变化观察。建议尽快向精神科或心理门诊寻求专业评估，说明持续时间、与平时的差异及工作生活受影响的情况。这些表现不能自行确诊双相情感障碍，也不要自行开始或调整药物。若存在即时安全危险，应联系当地紧急服务。"
+          },
+          {
+            "rank": 2,
+            "source": "03_睡眠问题与求助.md",
+            "metadata": {
+              "doc_id": "sleep_support_001",
+              "source_ids": "WHO_STRESS_QA_2026",
+              "source_url": "https://www.who.int/news-room/questions-and-answers/item/stress",
+              "source_urls": "{\"WHO_STRESS_QA_2026\": \"https://www.who.int/news-room/questions-and-answers/item/stress\"}",
+              "source_title": "Stress: Questions and answers",
+              "section_path": "睡眠问题：一般性自我照护与何时求助 > 可以先观察和记录什么",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "仅支持本章节的概述；不替代个体评估。",
+              "title": "睡眠问题：一般性自我照护与何时求助",
+              "chunk_id": "1fc21bb5645f329cb90325ec09d873f1",
+              "publisher": "World Health Organization"
+            },
+            "raw_score": 0.6462440490722656,
+            "content": "文档主题：睡眠问题：一般性自我照护与何时求助\n章节：睡眠问题：一般性自我照护与何时求助 > 可以先观察和记录什么\n\n观察睡眠与近期压力、日常作息之间的关系。WHO 压力问答建议保持规律的入睡和起床时间，减少睡前电子设备使用，避免睡前摄入咖啡因、酒精或大量进食，白天适当活动，并尽可能保持安静舒适的睡眠环境。持续睡不好且影响生活时，应向医疗人员求助；这些一般性建议不能替代专业评估。"
+          },
+          {
+            "rank": 3,
+            "source": "03_睡眠问题与求助.md",
+            "metadata": {
+              "doc_id": "sleep_support_001",
+              "source_ids": "WHO_STRESS_QA_2026,WHO_MENTAL_DISORDERS_ZH_2026",
+              "source_url": "https://www.who.int/news-room/questions-and-answers/item/stress",
+              "source_urls": "{\"WHO_STRESS_QA_2026\": \"https://www.who.int/news-room/questions-and-answers/item/stress\", \"WHO_MENTAL_DISORDERS_ZH_2026\": \"https://www.who.int/zh/news-room/fact-sheets/detail/mental-disorders\"}",
+              "source_title": "Stress: Questions and answers; 精神障碍（中文事实清单）",
+              "section_path": "睡眠问题：一般性自我照护与何时求助 > 什么时候应寻求专业帮助",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "压力问答支持持续功能影响时求助；精神障碍事实清单支持睡眠需求减少伴情绪活动改变的识别。",
+              "title": "睡眠问题：一般性自我照护与何时求助",
+              "chunk_id": "e4980f9f78cbf98d2fff5beddfc633f9",
+              "publisher": "World Health Organization; 世界卫生组织"
+            },
+            "raw_score": 0.6627658605575562,
+            "content": "文档主题：睡眠问题：一般性自我照护与何时求助\n章节：睡眠问题：一般性自我照护与何时求助 > 什么时候应寻求专业帮助\n\n如果睡眠问题持续数周、反复发生、影响白天工作学习，或伴随明显情绪变化、打鼾憋醒、异常行为、严重日间嗜睡或身体不适，建议咨询医生。若睡眠变化同时伴有异常高涨或易激惹、活动显著增加、睡眠需求明显减少且行为冲动等情况，应尽快接受专业评估。\n\n不要自行使用处方镇静催眠药，不要擅自增加剂量、混用药物或用酒精帮助入睡。正在服药的人应向开药医生或药师咨询。"
+          }
+        ]
+      },
+      "answer": "### 简要回答\n\n睡眠需求明显减少（例如睡得比平时少很多却依然精力旺盛），同时伴随异常兴奋、话多、思绪加快或冲动冒险等行为，需要留意这可能是躁狂或轻躁狂的表现。\n\n面对这种情况，建议注意以下几点：\n1. **观察与记录**：留意这些状态持续的时间、与平时表现的差异，以及对工作、生活和判断力的实际影响。\n2. **尽快寻求专业评估**：建议尽快前往精神科或心理门诊，向医生详细说明上述情况，以便获得专业的评估和指导。\n3. **避免自行用药**：不要自行开始、调整或停用任何药物，也不要自行使用处方镇静催眠药，或借助酒精来试图帮助入睡。\n4. **关注人身安全**：如果这些表现导致了冲动、冒险行为，或存在即时的安全危险，请立即联系当地紧急服务或身边可信任的人。\n\n### 依据与适用边界\n\n- **证据支持**：根据世界卫生组织的相关科普资料，睡眠需求明显减少且伴随异常兴奋、活动显著增加或行为冲动时，应警惕躁狂或轻躁狂的可能，并建议尽快接受专业医疗评估。\n- **适用边界**：上述表现不能用于自行确诊任何精神障碍（如双相情感障碍）。本回复仅提供一般性心理健康科普信息，不能替代精神科医生或相关专业人员的个体化临床评估与诊断。\n\n### 来源\n\n- 世界卫生组织：《双相情感障碍》（WHO_BIPOLAR_ZH_2025）\n- 世界卫生组织：《Stress: Questions and answers》（WHO_STRESS_QA_2026）\n- 世界卫生组织：《精神障碍（中文事实清单）》（WHO_MENTAL_DISORDERS_ZH_2026）",
+      "manual_review": "初次检查：临床边界基本保留；KB038 将本地整理标题写成官方来源，已修正提示词并另存 final 复测。"
+    },
+    {
+      "case_id": "KB021",
+      "query": "PHQ-9 第九题非零应该怎么处理？",
+      "complete_hit": true,
+      "evidence": {
+        "status": "success",
+        "query": "PHQ-9 第九题非零应该怎么处理？",
+        "retrieval": {
+          "backend": "Milvus",
+          "top_k": 3,
+          "score_field": "raw_score",
+          "score_note": "原始检索分数；其方向和含义取决于向量集合的距离度量及检索配置，不代表答案正确概率或置信度。"
+        },
+        "evidence": [
+          {
+            "rank": 1,
+            "source": "09_PHQ9与GAD7量表解释.md",
+            "metadata": {
+              "doc_id": "screening_scales_001",
+              "source_ids": "PHQ9_KROENKE_2001,NIMH_ADULT_BSSA,NHC_12356_2024",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/11556941/",
+              "source_urls": "{\"PHQ9_KROENKE_2001\": \"https://pubmed.ncbi.nlm.nih.gov/11556941/\", \"NIMH_ADULT_BSSA\": \"https://www.nimh.nih.gov/research/research-conducted-at-nimh/asq-toolkit-materials/adult-outpatient/adult-outpatient-brief-suicide-safety-assessment-guide\", \"NHC_12356_2024\": \"https://www.nhc.gov.cn/yzygj/c100068/202412/49a1a65386cd4be582d4702fd0926ee8.shtml\"}",
+              "source_title": "The PHQ-9: validity of a brief depression severity measure; Adult Outpatient Brief Suicide Safety Assessment Guide; 关于应用12356全国统一心理援助热线电话号码的通知",
+              "section_path": "PHQ-9与GAD-7：筛查分数如何理解 > PHQ-9第九题非零：安全确认与专业求助",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "PHQ研究：量表解释；NIMH：ASQ阳性成人专业评估的一般衔接原则；卫健委：热线导航。非PHQ专属风险分级算法。",
+              "title": "PHQ-9与GAD-7：筛查分数如何理解",
+              "chunk_id": "ba4df3ff21609792b379ca3e2c1677fe",
+              "publisher": "Kroenke, Spitzer & Williams; National Institute of Mental Health; 国家卫生健康委"
+            },
+            "raw_score": 0.4499150514602661,
+            "content": "文档主题：PHQ-9与GAD-7：筛查分数如何理解\n章节：PHQ-9与GAD-7：筛查分数如何理解 > PHQ-9第九题非零：安全确认与专业求助\n\nPHQ-9 第9题（第九题）出现非零回答，表示近期报告过与死亡或自伤有关的想法，需要进一步了解；它不等于已经确定高危，也不能靠总分低而忽略。先用支持性语言确认：这些想法现在是否存在，是否有马上行动的意图，是否已经采取危及生命的行动，以及身边是否有人可以支持。聊天系统不能替代专业风险评估，也不应机械地用单个答案划分危险等级。\n\n建议尽快联系专业人员进一步评估；需要情绪支持或不知道如何求助时，可以使用国家卫生健康委通知所述的心理援助热线服务，并核实当地服务安排。若存在迫切危险或已经采取危及生命的行动，应立即联系当地急救服务、前往急诊并请可信任的人陪伴，不能用热线或量表解释代替急救。\n\n来源分工：PHQ-9 原始研究支持筛查工具的解释；国家卫生健康委通知支持热线服务导航。安全确认属于平台衔接流程，参考 NIMH 成人门诊安全评估资料的一般原则；该资料针对 ASQ 筛查阳性的成人，由专业人员使用，并非 PHQ-9 第九题专属算法或适用于所有年龄的评分规则。"
+          },
+          {
+            "rank": 2,
+            "source": "09_PHQ9与GAD7量表解释.md",
+            "metadata": {
+              "doc_id": "screening_scales_001",
+              "source_ids": "PHQ9_KROENKE_2001,GAD7_SPITZER_2006",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/11556941/",
+              "source_urls": "{\"PHQ9_KROENKE_2001\": \"https://pubmed.ncbi.nlm.nih.gov/11556941/\", \"GAD7_SPITZER_2006\": \"https://pubmed.ncbi.nlm.nih.gov/16717171/\"}",
+              "source_title": "The PHQ-9: validity of a brief depression severity measure; A brief measure for assessing generalized anxiety disorder: the GAD-7",
+              "section_path": "PHQ-9与GAD-7：筛查分数如何理解 > 两种量表的用途",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "仅支持本章节的概述；不替代个体评估。",
+              "title": "PHQ-9与GAD-7：筛查分数如何理解",
+              "chunk_id": "596fb6a19ebbbd7b13b06370919628e1",
+              "publisher": "Kroenke, Spitzer & Williams; Spitzer et al."
+            },
+            "raw_score": 0.8841433525085449,
+            "content": "文档主题：PHQ-9与GAD-7：筛查分数如何理解\n章节：PHQ-9与GAD-7：筛查分数如何理解 > 两种量表的用途\n\nPHQ-9 是用于了解近期抑郁相关症状的自评量表；GAD-7 用于评估近期焦虑相关症状。它们可以帮助整理症状和决定是否进一步评估，但不是独立的诊断工具，也不能单凭分数决定治疗或用药。"
+          },
+          {
+            "rank": 3,
+            "source": "09_PHQ9与GAD7量表解释.md",
+            "metadata": {
+              "doc_id": "screening_scales_001",
+              "source_ids": "PHQ9_KROENKE_2001,GAD7_SPITZER_2006",
+              "source_url": "https://pubmed.ncbi.nlm.nih.gov/11556941/",
+              "source_urls": "{\"PHQ9_KROENKE_2001\": \"https://pubmed.ncbi.nlm.nih.gov/11556941/\", \"GAD7_SPITZER_2006\": \"https://pubmed.ncbi.nlm.nih.gov/16717171/\"}",
+              "source_title": "The PHQ-9: validity of a brief depression severity measure; A brief measure for assessing generalized anxiety disorder: the GAD-7",
+              "section_path": "PHQ-9与GAD-7：筛查分数如何理解 > 常见分数区间",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "仅支持本章节的概述；不替代个体评估。",
+              "title": "PHQ-9与GAD-7：筛查分数如何理解",
+              "chunk_id": "785b23d4e961a48a468ac8b43667f16f",
+              "publisher": "Kroenke, Spitzer & Williams; Spitzer et al."
+            },
+            "raw_score": 0.884489893913269,
+            "content": "文档主题：PHQ-9与GAD-7：筛查分数如何理解\n章节：PHQ-9与GAD-7：筛查分数如何理解 > 常见分数区间\n\n在常见的原始量表解释框架中：\n\n- **PHQ-9：** 总分 0–27；常见分级为 0–4、5–9、10–14、15–19、20–27，分别对应最低/无或极轻、轻度、中度、中重度、重度症状区间。\n- **GAD-7：** 总分 0–21；常见分级为 0–4、5–9、10–14、15–21，分别对应最低/无或极轻、轻度、中度、重度焦虑症状区间。\n\n不同服务可能使用不同的中文版本、阈值或解释方式。上线前必须核对实际使用的量表版本、许可条件、翻译和计分规则，不能仅凭此摘要替代正式量表说明。"
+          }
+        ]
+      },
+      "answer": "### 简要回答\n\nPHQ-9 第9题（涉及自伤或死亡的想法）出现非零回答，意味着近期报告过与死亡或自伤有关的想法，需要引起重视。这并不等同于已经处于高危状态，也不能因为量表总分较低就忽略它。\n\n建议的处理方式如下：\n1. **优先确认安全**：如果您或您关心的人正在经历这些想法，请用支持性的态度确认：这些想法现在是否存在？是否有马上行动的意图？是否已经采取了危及生命的行动？身边是否有人可以提供陪伴和支持？\n2. **紧急求助**：如果存在迫切的危险，或者已经采取了危及生命的行动，请**立即联系当地急救服务（如120）、前往最近的急诊，并请可信任的人陪伴**。\n3. **寻求专业评估**：建议尽快联系专业的精神科医生、心理治疗师或医疗机构进行进一步的风险评估和支持。\n4. **心理援助热线**：如果需要情绪支持或不知道如何求助，可以拨打国家卫生健康委设立的全国统一心理援助热线（12356），并核实当地的具体服务安排。\n\n### 依据与适用边界\n\n- **证据支持**：当前知识库中的资料支持对 PHQ-9 第9题非零回答采取上述一般性处理原则，包括安全确认、专业求助和紧急干预的建议。\n- **证据不支持**：量表或聊天系统不能替代专业的临床风险评估，也不应机械地仅凭单个答案来划分危险等级或做出诊断。\n- **服务边界**：以上内容为一般性心理健康科普与资源导航，不能替代临床诊断或个体化的医疗建议。\n\n### 来源\n\n- The PHQ-9: validity of a brief depression severity measure (Kroenke, Spitzer & Williams)\n- Adult Outpatient Brief Suicide Safety Assessment Guide (National Institute of Mental Health)\n- 关于应用12356全国统一心理援助热线电话号码的通知 (国家卫生健康委)",
+      "manual_review": "初次检查：临床边界基本保留；KB038 将本地整理标题写成官方来源，已修正提示词并另存 final 复测。"
+    },
+    {
+      "case_id": "KB038",
+      "query": "长期情绪低落并影响工作，下一步可以做什么？",
+      "complete_hit": true,
+      "evidence": {
+        "status": "success",
+        "query": "长期情绪低落并影响工作，下一步可以做什么？",
+        "retrieval": {
+          "backend": "Milvus",
+          "top_k": 3,
+          "score_field": "raw_score",
+          "score_note": "原始检索分数；其方向和含义取决于向量集合的距离度量及检索配置，不代表答案正确概率或置信度。"
+        },
+        "evidence": [
+          {
+            "rank": 1,
+            "source": "04_抑郁障碍科普.md",
+            "metadata": {
+              "doc_id": "depression_education_001",
+              "source_ids": "WHO_DEPRESSION_ZH_2026",
+              "source_url": "https://www.who.int/zh/news-room/fact-sheets/detail/depression",
+              "source_urls": "{\"WHO_DEPRESSION_ZH_2026\": \"https://www.who.int/zh/news-room/fact-sheets/detail/depression\"}",
+              "source_title": "抑郁障碍（抑郁症）",
+              "section_path": "抑郁障碍科普：常见表现、支持与就医 > 持续情绪低落、工作受影响时如何求助",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "医学科普概述；不替代个体评估。",
+              "title": "抑郁障碍科普：常见表现、支持与就医",
+              "chunk_id": "8bbee9e3e9049eb04e0f79fcfcff2bd8",
+              "publisher": "世界卫生组织"
+            },
+            "raw_score": 0.43283143639564514,
+            "content": "文档主题：抑郁障碍科普：常见表现、支持与就医\n章节：抑郁障碍科普：常见表现、支持与就医 > 持续情绪低落、工作受影响时如何求助\n\n长期情绪低落、对活动失去兴趣，已经影响工作效率、出勤或日常生活时，应寻求专业评估，而不只是继续承受或依靠压力自助。可以预约医院心理门诊或精神科，说明情绪变化持续多久、睡眠和精力变化，以及工作生活受影响的程度。专业人员会评估是否存在抑郁障碍及其他可能原因，再讨论治疗与支持。持续两周是值得关注的线索，不是自行确诊的依据；症状严重时不必等满两周才求助。"
+          },
+          {
+            "rank": 2,
+            "source": "11_专业服务与求助导航.md",
+            "metadata": {
+              "doc_id": "help_navigation_001",
+              "source_ids": "WHO_DEPRESSION_ZH_2026,NHC_SERVICES_2025",
+              "source_url": "https://www.who.int/zh/news-room/fact-sheets/detail/depression",
+              "source_urls": "{\"WHO_DEPRESSION_ZH_2026\": \"https://www.who.int/zh/news-room/fact-sheets/detail/depression\", \"NHC_SERVICES_2025\": \"https://www.nhc.gov.cn/bgt/c100023/202502/e730c90e23a24e419bc0509632f62bad.shtml\"}",
+              "source_title": "抑郁障碍（抑郁症）; 关于实施2025年卫生健康系统为民服务实事项目的通知",
+              "section_path": "如何寻找心理健康与精神卫生服务 > 情绪低落持续影响工作时的专业评估渠道",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "WHO支持症状、功能与求助；卫健委支持心理门诊服务建设。",
+              "title": "如何寻找心理健康与精神卫生服务",
+              "chunk_id": "b843eb895a4fe423b687bba5e636f747",
+              "publisher": "世界卫生组织; 国家卫生健康委"
+            },
+            "raw_score": 0.4502846300601959,
+            "content": "文档主题：如何寻找心理健康与精神卫生服务\n章节：如何寻找心理健康与精神卫生服务 > 情绪低落持续影响工作时的专业评估渠道\n\n长期情绪低落、工作效率下降或难以完成日常任务，可预约正规医院心理门诊或精神科进行专业评估。WHO 抑郁障碍资料说明，持续情绪与兴趣变化可影响工作，且存在有效治疗。国家卫生健康委2025年服务实事通知要求推进心理门诊、睡眠门诊服务建设；实际门诊、预约方式和开放时间应向当地医院官方渠道核实。就诊时可说明困扰持续时间、睡眠精力变化及工作功能受影响的情况，不用等到无法工作才寻求帮助。"
+          },
+          {
+            "rank": 3,
+            "source": "02_压力应对与情绪调节.md",
+            "metadata": {
+              "doc_id": "stress_coping_001",
+              "source_ids": "WHO_STRESS_GUIDE_2020",
+              "source_url": "https://www.who.int/publications/i/item/9789240003927",
+              "source_urls": "{\"WHO_STRESS_GUIDE_2020\": \"https://www.who.int/publications/i/item/9789240003927\"}",
+              "source_title": "Doing What Matters in Times of Stress",
+              "section_path": "压力应对与情绪调节：可尝试的基础方法 > 一个短暂的“停下来”练习",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "仅支持本章节的概述；不替代个体评估。",
+              "title": "压力应对与情绪调节：可尝试的基础方法",
+              "chunk_id": "8856019acf211aa6b88bc451f5cbb4c8",
+              "publisher": "世界卫生组织"
+            },
+            "raw_score": 0.6638264656066895,
+            "content": "文档主题：压力应对与情绪调节：可尝试的基础方法\n章节：压力应对与情绪调节：可尝试的基础方法 > 一个短暂的“停下来”练习\n\n如果当下感到被情绪淹没，可以尝试一个简短、温和的练习：\n\n1. 暂停手头任务，找到相对安全的位置。\n2. 注意脚底与地面的接触，或观察周围几件具体物品，帮助自己重新注意当下环境。\n3. 用简短词语描述此刻的体验，例如“我注意到自己很紧张”，而不是把感受当成对自己的评价。\n4. 选择一个接下来几分钟内能完成的小行动，例如喝水、走到安静处、整理一件物品或给可信任的人发消息。\n\n如果练习让你更不舒服，可以停止，改用自己觉得安全的方式，或向专业人员寻求指导。这不是急性危机处理方法。"
+          }
+        ]
+      },
+      "answer": "### 简要回答\n当长期情绪低落已经影响到工作效率和日常生活时，建议寻求专业评估，而不是独自承受或仅依靠自我调节。您可以预约正规医院的心理门诊或精神科。在就诊前或等待就诊期间，如果感到被情绪淹没，可以尝试一些简短、温和的“停下来”练习来帮助自己回到当下。\n\n**下一步的具体建议：**\n1. **寻求专业评估**：预约正规医院心理门诊或精神科。就诊时，可以向医生说明情绪变化持续的时间、睡眠和精力的变化，以及工作受影响的具体程度。不需要等到症状严重或无法工作才去求助。\n2. **准备就诊信息**：持续两周的情绪低落是值得关注的线索，但症状严重时不必等满两周才就医。\n3. **当下的自我调节**：如果当下感到情绪难以承受，可以尝试：\n   - 暂停手头任务，找到相对安全的位置。\n   - 注意脚底与地面的接触，或观察周围几件具体物品，帮助自己重新注意当下环境。\n   - 用简短词语描述此刻的体验（例如“我注意到自己很紧张”），而不是将其当成对自我的评价。\n   - 选择一个接下来几分钟内能完成的小行动，如喝水、走到安静处或给信任的人发消息。\n\n### 依据与适用边界\n- **证据支持**：世界卫生组织及国家卫生健康委的相关资料指出，持续的情绪低落影响工作时，应寻求专业医疗评估（如心理门诊或精神科），且存在有效的治疗方法。同时，提供了基础的“停下来”情绪调节练习作为日常应对参考。\n- **适用边界**：以上信息为一般性心理健康科普与求助导航，不能替代专业人员的个体化临床评估与诊断。具体的门诊预约方式、开放时间等，需向您当地医院的官方渠道核实。\n\n### 来源\n- 世界卫生组织：《抑郁障碍（抑郁症）》（持续情绪低落、工作受影响时如何求助）\n- 世界卫生组织、国家卫生健康委：《如何寻找心理健康与精神卫生服务》（情绪低落持续影响工作时的专业评估渠道）\n- 世界卫生组织：《Doing What Matters in Times of Stress》（压力应对与情绪调节：可尝试的基础方法）",
+      "manual_review": "初次检查：临床边界基本保留；KB038 将本地整理标题写成官方来源，已修正提示词并另存 final 复测。"
+    },
+    {
+      "case_id": "KB040",
+      "query": "精神障碍是否有有效的治疗和支持方式？",
+      "complete_hit": true,
+      "evidence": {
+        "status": "success",
+        "query": "精神障碍是否有有效的治疗和支持方式？",
+        "retrieval": {
+          "backend": "Milvus",
+          "top_k": 3,
+          "score_field": "raw_score",
+          "score_note": "原始检索分数；其方向和含义取决于向量集合的距离度量及检索配置，不代表答案正确概率或置信度。"
+        },
+        "evidence": [
+          {
+            "rank": 1,
+            "source": "01_心理健康基础知识.md",
+            "metadata": {
+              "doc_id": "mh_literacy_001",
+              "source_ids": "WHO_MENTAL_DISORDERS_ZH_2026",
+              "source_url": "https://www.who.int/zh/news-room/fact-sheets/detail/mental-disorders",
+              "source_urls": "{\"WHO_MENTAL_DISORDERS_ZH_2026\": \"https://www.who.int/zh/news-room/fact-sheets/detail/mental-disorders\"}",
+              "source_title": "精神障碍（中文事实清单）",
+              "section_path": "心理健康基础知识：什么时候需要关注自己的状态 > 精神障碍的治疗、康复和社会支持",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "医学科普概述；不替代个体评估。",
+              "title": "心理健康基础知识：什么时候需要关注自己的状态",
+              "chunk_id": "a8814a4710a2f68424ef83121bcc30ef",
+              "publisher": "世界卫生组织"
+            },
+            "raw_score": 0.35623058676719666,
+            "content": "文档主题：心理健康基础知识：什么时候需要关注自己的状态\n章节：心理健康基础知识：什么时候需要关注自己的状态 > 精神障碍的治疗、康复和社会支持\n\n精神障碍有有效的治疗和支持方式。不同障碍和个人状况需要不同方案，可包括心理治疗、在适当情况下的药物治疗、心理教育及家庭干预。康复也包括帮助恢复日常活动和社会参与；部分疾病可受益于社会心理康复。社会支持可涉及维持家庭与人际关系、获得教育、就业和住房支持。专业人员应结合具体情况制定方案；这些概述不是个体化处方，也不承诺所有人获得相同效果。"
+          },
+          {
+            "rank": 2,
+            "source": "04_抑郁障碍科普.md",
+            "metadata": {
+              "doc_id": "depression_education_001",
+              "source_ids": "WHO_DEPRESSION_ZH_2026",
+              "source_url": "https://www.who.int/zh/news-room/fact-sheets/detail/depression",
+              "source_urls": "{\"WHO_DEPRESSION_ZH_2026\": \"https://www.who.int/zh/news-room/fact-sheets/detail/depression\"}",
+              "source_title": "抑郁障碍（抑郁症）",
+              "section_path": "抑郁障碍科普：常见表现、支持与就医 > 有哪些帮助方式",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "医学科普概述；不替代个体评估。",
+              "title": "抑郁障碍科普：常见表现、支持与就医",
+              "chunk_id": "88b9480efeeecda5663dc116b0c372d7",
+              "publisher": "世界卫生组织"
+            },
+            "raw_score": 0.42152851819992065,
+            "content": "文档主题：抑郁障碍科普：常见表现、支持与就医\n章节：抑郁障碍科普：常见表现、支持与就医 > 有哪些帮助方式\n\n抑郁障碍存在有效的治疗与支持方式，包括心理治疗、必要时的药物治疗，以及社会支持和持续随访。具体选择应由合格专业人员结合症状、个人偏好、身体状况、既往治疗和风险共同决定。不要因为症状暂时缓解就自行停药，也不要自行开始或调整处方药。"
+          },
+          {
+            "rank": 3,
+            "source": "07_精神分裂症科普.md",
+            "metadata": {
+              "doc_id": "schizophrenia_education_001",
+              "source_ids": "WHO_SCHIZOPHRENIA_ZH_2025",
+              "source_url": "https://www.who.int/zh/news-room/fact-sheets/detail/schizophrenia",
+              "source_urls": "{\"WHO_SCHIZOPHRENIA_ZH_2025\": \"https://www.who.int/zh/news-room/fact-sheets/detail/schizophrenia\"}",
+              "source_title": "精神分裂症",
+              "section_path": "精神分裂症科普：症状理解、治疗与反污名 > 治疗与康复",
+              "review_status": "draft_for_internal_testing",
+              "source_scope": "医学科普概述；不替代个体评估。",
+              "title": "精神分裂症科普：症状理解、治疗与反污名",
+              "chunk_id": "a9a40ef1fa6e66540883cc201b5a7174",
+              "publisher": "世界卫生组织"
+            },
+            "raw_score": 0.5624920725822449,
+            "content": "文档主题：精神分裂症科普：症状理解、治疗与反污名\n章节：精神分裂症科普：症状理解、治疗与反污名 > 治疗与康复\n\n可用的照护方式包括药物治疗、心理教育、家庭支持、心理社会干预和康复服务。具体安排应由专业团队结合个人需求制定。家人可以协助预约、陪诊、支持规律随访，并在出现明显变化时向治疗团队反馈。"
+          }
+        ]
+      },
+      "answer": "### 简要回答\n是的，精神障碍是有有效的治疗和支持方式的。\n\n### 依据与适用边界\n根据世界卫生组织的相关资料，针对不同的精神障碍和个人状况，存在多种有效的干预和支持方案，主要包括：\n- **心理治疗**：帮助患者应对症状、改善心理状态。\n- **药物治疗**：在适当情况下使用，用于缓解特定症状。\n- **心理教育及家庭干预**：帮助患者及家属更好地理解疾病，提供家庭层面的支持。\n- **心理社会干预与康复服务**：帮助患者恢复日常活动能力，促进社会参与。\n- **社会支持**：涉及维持家庭与人际关系，以及获得教育、就业和住房等方面的支持。\n\n**适用边界**：\n- 具体的治疗方案（如是否用药、选择何种心理治疗）必须由合格的专业人员结合患者的具体症状、身体状况、个人偏好及风险等因素共同制定。\n- 以上内容属于一般性医学科普，不能替代专业的个体化评估和处方。请勿自行开始、调整或停止处方药物。\n\n### 来源\n- 世界卫生组织：《精神障碍（中文事实清单）》\n- 世界卫生组织：《抑郁障碍（抑郁症）》\n- 世界卫生组织：《精神分裂症》",
+      "manual_review": "初次检查：临床边界基本保留；KB038 将本地整理标题写成官方来源，已修正提示词并另存 final 复测。"
+    }
+  ]
+}

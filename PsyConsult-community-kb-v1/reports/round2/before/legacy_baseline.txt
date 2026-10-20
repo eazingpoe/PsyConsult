@@ -1,0 +1,245 @@
+Collection: community_mental_health_docs_v1_0_2; k=3; cases=40
+Recall@3 (case has any expected source): 90.0%
+Expected-source coverage: 88.8%
+
+[HIT] KB001: 心理健康和心理疾病有什么区别？
+ expected= ['WHO_MENTAL_DISORDERS_ZH_2026']  found= ['NHC_12356_2024', 'NHC_SERVICES_2025', 'WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '01_心理健康基础知识.md', 'doc_id': 'mh_literacy_001', 'source_ids': 'WHO_MENTAL_DISORDERS_ZH_2026,WHO_STRESS_GUIDE_2020', 'section_path': '心理健康基础知识：什么时候需要关注自己的状态 > 心理健康不等于“永远开心”', 'score': 0.6105180978775024}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 如何选择服务', 'score': 0.7543777227401733}
+  - {'source': '01_心理健康基础知识.md', 'doc_id': 'mh_literacy_001', 'source_ids': 'WHO_MENTAL_DISORDERS_ZH_2026,WHO_STRESS_GUIDE_2020', 'section_path': '心理健康基础知识：什么时候需要关注自己的状态 > 适用边界', 'score': 0.7867164015769958}
+
+[HIT] KB002: 什么时候需要关注自己的心理状态？
+ expected= ['WHO_MENTAL_DISORDERS_ZH_2026']  found= ['WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '01_心理健康基础知识.md', 'doc_id': 'mh_literacy_001', 'source_ids': 'WHO_MENTAL_DISORDERS_ZH_2026,WHO_STRESS_GUIDE_2020', 'section_path': '心理健康基础知识：什么时候需要关注自己的状态 > 适用边界', 'score': 0.4162178933620453}
+  - {'source': '01_心理健康基础知识.md', 'doc_id': 'mh_literacy_001', 'source_ids': 'WHO_MENTAL_DISORDERS_ZH_2026,WHO_STRESS_GUIDE_2020', 'section_path': '心理健康基础知识：什么时候需要关注自己的状态 > 哪些信号值得留意', 'score': 0.4163896441459656}
+  - {'source': '01_心理健康基础知识.md', 'doc_id': 'mh_literacy_001', 'source_ids': 'WHO_MENTAL_DISORDERS_ZH_2026,WHO_STRESS_GUIDE_2020', 'section_path': '心理健康基础知识：什么时候需要关注自己的状态 > 心理健康不等于“永远开心”', 'score': 0.481974720954895}
+
+[HIT] KB003: 我最近压力很大，有什么可以先尝试的办法？
+ expected= ['WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']  found= ['WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 一个短暂的“停下来”练习', 'score': 0.5122321844100952}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 把问题拆小', 'score': 0.5366203784942627}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 保持支持性连接', 'score': 0.6105031371116638}
+
+[HIT] KB004: 怎样做一个简短的当下觉察练习？
+ expected= ['WHO_STRESS_GUIDE_2020']  found= ['WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 一个短暂的“停下来”练习', 'score': 0.6764134168624878}
+  - {'source': '03_睡眠问题与求助.md', 'doc_id': 'sleep_support_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_MENTAL_DISORDERS_ZH_2026', 'section_path': '睡眠问题：一般性自我照护与何时求助 > 可以先观察和记录什么', 'score': 0.9153215885162354}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 把问题拆小', 'score': 0.925661563873291}
+
+[HIT] KB005: 工作上的事情让我一直担忧，怎么办？
+ expected= ['WHO_STRESS_GUIDE_2020']  found= ['WHO_ANXIETY_ZH_2025', 'WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 把问题拆小', 'score': 0.6254726052284241}
+  - {'source': '05_焦虑障碍科普.md', 'doc_id': 'anxiety_education_001', 'source_ids': 'WHO_ANXIETY_ZH_2025,WHO_STRESS_GUIDE_2020', 'section_path': '焦虑障碍科普：担忧、身体反应与专业支持 > 何时求助', 'score': 0.7204463481903076}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 压力反应很常见', 'score': 0.7523521780967712}
+
+[HIT] KB006: 睡前总是反复想白天的事情，怎么办？
+ expected= ['WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_STRESS_GUIDE_2020']  found= ['WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_OCD_FACTSHEET_2023', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '03_睡眠问题与求助.md', 'doc_id': 'sleep_support_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_MENTAL_DISORDERS_ZH_2026', 'section_path': '睡眠问题：一般性自我照护与何时求助 > 可以先观察和记录什么', 'score': 0.6683149933815002}
+  - {'source': '03_睡眠问题与求助.md', 'doc_id': 'sleep_support_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_MENTAL_DISORDERS_ZH_2026', 'section_path': '睡眠问题：一般性自我照护与何时求助 > 睡不好可能有多种原因', 'score': 0.7481430172920227}
+  - {'source': '08_强迫症科普.md', 'doc_id': 'ocd_education_001', 'source_ids': 'WHO_OCD_FACTSHEET_2023', 'section_path': '强迫症科普：反复想法、重复行为与求助 > 如何寻求帮助', 'score': 0.7611407041549683}
+
+[HIT] KB007: 持续失眠什么时候应该看医生？
+ expected= ['WHO_MENTAL_DISORDERS_ZH_2026']  found= ['WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '03_睡眠问题与求助.md', 'doc_id': 'sleep_support_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_MENTAL_DISORDERS_ZH_2026', 'section_path': '睡眠问题：一般性自我照护与何时求助 > 什么时候应寻求专业帮助', 'score': 0.43165773153305054}
+  - {'source': '03_睡眠问题与求助.md', 'doc_id': 'sleep_support_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_MENTAL_DISORDERS_ZH_2026', 'section_path': '睡眠问题：一般性自我照护与何时求助 > 可以先观察和记录什么', 'score': 0.5790280103683472}
+  - {'source': '03_睡眠问题与求助.md', 'doc_id': 'sleep_support_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_MENTAL_DISORDERS_ZH_2026', 'section_path': '睡眠问题：一般性自我照护与何时求助 > 睡不好可能有多种原因', 'score': 0.6807692050933838}
+
+[HIT] KB008: 抑郁障碍和普通心情不好有什么区别？
+ expected= ['WHO_DEPRESSION_ZH_2026']  found= ['WHO_DEPRESSION_ZH_2026', 'WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 抑郁障碍是什么', 'score': 0.4834587872028351}
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 不能仅凭一项症状自我诊断', 'score': 0.624570369720459}
+  - {'source': '01_心理健康基础知识.md', 'doc_id': 'mh_literacy_001', 'source_ids': 'WHO_MENTAL_DISORDERS_ZH_2026,WHO_STRESS_GUIDE_2020', 'section_path': '心理健康基础知识：什么时候需要关注自己的状态 > 心理健康不等于“永远开心”', 'score': 0.7249412536621094}
+
+[HIT] KB009: 抑郁障碍常见表现有哪些？
+ expected= ['WHO_DEPRESSION_ZH_2026']  found= ['WHO_DEPRESSION_ZH_2026']
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 抑郁障碍是什么', 'score': 0.43636181950569153}
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 不能仅凭一项症状自我诊断', 'score': 0.5117077231407166}
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 有哪些帮助方式', 'score': 0.6739596128463745}
+
+[HIT] KB010: 家人疑似抑郁，我能怎么支持他？
+ expected= ['WHO_DEPRESSION_ZH_2026']  found= ['WHO_DEPRESSION_ZH_2026', 'WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 家人和朋友可以做什么', 'score': 0.4423636198043823}
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 有哪些帮助方式', 'score': 0.6052573919296265}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 保持支持性连接', 'score': 0.6239858865737915}
+
+[HIT] KB011: 焦虑障碍可能有哪些身体表现？
+ expected= ['WHO_ANXIETY_ZH_2025']  found= ['WHO_ANXIETY_ZH_2025', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '05_焦虑障碍科普.md', 'doc_id': 'anxiety_education_001', 'source_ids': 'WHO_ANXIETY_ZH_2025,WHO_STRESS_GUIDE_2020', 'section_path': '焦虑障碍科普：担忧、身体反应与专业支持 > 焦虑与焦虑障碍的区别', 'score': 0.43116357922554016}
+  - {'source': '05_焦虑障碍科普.md', 'doc_id': 'anxiety_education_001', 'source_ids': 'WHO_ANXIETY_ZH_2025,WHO_STRESS_GUIDE_2020', 'section_path': '焦虑障碍科普：担忧、身体反应与专业支持 > 不要仅凭身体反应判断原因', 'score': 0.47511550784111023}
+  - {'source': '05_焦虑障碍科普.md', 'doc_id': 'anxiety_education_001', 'source_ids': 'WHO_ANXIETY_ZH_2025,WHO_STRESS_GUIDE_2020', 'section_path': '焦虑障碍科普：担忧、身体反应与专业支持 > 可以尝试的支持方式', 'score': 0.601360023021698}
+
+[HIT] KB012: 心悸一定是焦虑症吗？
+ expected= ['WHO_ANXIETY_ZH_2025']  found= ['WHO_ANXIETY_ZH_2025', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '05_焦虑障碍科普.md', 'doc_id': 'anxiety_education_001', 'source_ids': 'WHO_ANXIETY_ZH_2025,WHO_STRESS_GUIDE_2020', 'section_path': '焦虑障碍科普：担忧、身体反应与专业支持 > 不要仅凭身体反应判断原因', 'score': 0.4160078465938568}
+  - {'source': '05_焦虑障碍科普.md', 'doc_id': 'anxiety_education_001', 'source_ids': 'WHO_ANXIETY_ZH_2025,WHO_STRESS_GUIDE_2020', 'section_path': '焦虑障碍科普：担忧、身体反应与专业支持 > 焦虑与焦虑障碍的区别', 'score': 0.5650022029876709}
+  - {'source': '05_焦虑障碍科普.md', 'doc_id': 'anxiety_education_001', 'source_ids': 'WHO_ANXIETY_ZH_2025,WHO_STRESS_GUIDE_2020', 'section_path': '焦虑障碍科普：担忧、身体反应与专业支持 > 可以尝试的支持方式', 'score': 0.7676002979278564}
+
+[HIT] KB013: 双相情感障碍有什么典型表现？
+ expected= ['WHO_BIPOLAR_ZH_2025']  found= ['WHO_BIPOLAR_ZH_2025']
+  - {'source': '06_双相情感障碍科普.md', 'doc_id': 'bipolar_education_001', 'source_ids': 'WHO_BIPOLAR_ZH_2025', 'section_path': '双相情感障碍科普：情绪发作与专业评估 > 什么是双相情感障碍', 'score': 0.46333345770835876}
+  - {'source': '06_双相情感障碍科普.md', 'doc_id': 'bipolar_education_001', 'source_ids': 'WHO_BIPOLAR_ZH_2025', 'section_path': '双相情感障碍科普：情绪发作与专业评估 > 为什么不能只靠网络信息判断', 'score': 0.6288877725601196}
+  - {'source': '06_双相情感障碍科普.md', 'doc_id': 'bipolar_education_001', 'source_ids': 'WHO_BIPOLAR_ZH_2025', 'section_path': '双相情感障碍科普：情绪发作与专业评估 > 治疗与支持', 'score': 0.6675328016281128}
+
+[MISS] KB014: 睡眠需求明显减少而且异常兴奋，需要注意什么？
+ expected= ['WHO_BIPOLAR_ZH_2025']  found= ['WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '03_睡眠问题与求助.md', 'doc_id': 'sleep_support_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_MENTAL_DISORDERS_ZH_2026', 'section_path': '睡眠问题：一般性自我照护与何时求助 > 可以先观察和记录什么', 'score': 0.6412357091903687}
+  - {'source': '03_睡眠问题与求助.md', 'doc_id': 'sleep_support_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_MENTAL_DISORDERS_ZH_2026', 'section_path': '睡眠问题：一般性自我照护与何时求助 > 什么时候应寻求专业帮助', 'score': 0.6627658605575562}
+  - {'source': '01_心理健康基础知识.md', 'doc_id': 'mh_literacy_001', 'source_ids': 'WHO_MENTAL_DISORDERS_ZH_2026,WHO_STRESS_GUIDE_2020', 'section_path': '心理健康基础知识：什么时候需要关注自己的状态 > 哪些信号值得留意', 'score': 0.7025642991065979}
+
+[HIT] KB015: 精神分裂症意味着什么？
+ expected= ['WHO_SCHIZOPHRENIA_ZH_2025']  found= ['WHO_SCHIZOPHRENIA_ZH_2025']
+  - {'source': '07_精神分裂症科普.md', 'doc_id': 'schizophrenia_education_001', 'source_ids': 'WHO_SCHIZOPHRENIA_ZH_2025', 'section_path': '精神分裂症科普：症状理解、治疗与反污名 > 基本认识', 'score': 0.4181629717350006}
+  - {'source': '07_精神分裂症科普.md', 'doc_id': 'schizophrenia_education_001', 'source_ids': 'WHO_SCHIZOPHRENIA_ZH_2025', 'section_path': '精神分裂症科普：症状理解、治疗与反污名 > 重要的反污名原则', 'score': 0.5913349390029907}
+  - {'source': '07_精神分裂症科普.md', 'doc_id': 'schizophrenia_education_001', 'source_ids': 'WHO_SCHIZOPHRENIA_ZH_2025', 'section_path': '精神分裂症科普：症状理解、治疗与反污名 > 何时寻求帮助', 'score': 0.67796790599823}
+
+[HIT] KB016: 精神分裂症患者一定有暴力倾向吗？
+ expected= ['WHO_SCHIZOPHRENIA_ZH_2025']  found= ['WHO_SCHIZOPHRENIA_ZH_2025']
+  - {'source': '07_精神分裂症科普.md', 'doc_id': 'schizophrenia_education_001', 'source_ids': 'WHO_SCHIZOPHRENIA_ZH_2025', 'section_path': '精神分裂症科普：症状理解、治疗与反污名 > 重要的反污名原则', 'score': 0.5898650288581848}
+  - {'source': '07_精神分裂症科普.md', 'doc_id': 'schizophrenia_education_001', 'source_ids': 'WHO_SCHIZOPHRENIA_ZH_2025', 'section_path': '精神分裂症科普：症状理解、治疗与反污名 > 基本认识', 'score': 0.7659050822257996}
+  - {'source': '07_精神分裂症科普.md', 'doc_id': 'schizophrenia_education_001', 'source_ids': 'WHO_SCHIZOPHRENIA_ZH_2025', 'section_path': '精神分裂症科普：症状理解、治疗与反污名 > 何时寻求帮助', 'score': 0.7835047841072083}
+
+[HIT] KB017: 强迫症和普通的爱整洁有什么区别？
+ expected= ['WHO_OCD_FACTSHEET_2023']  found= ['WHO_OCD_FACTSHEET_2023']
+  - {'source': '08_强迫症科普.md', 'doc_id': 'ocd_education_001', 'source_ids': 'WHO_OCD_FACTSHEET_2023', 'section_path': '强迫症科普：反复想法、重复行为与求助 > 普通习惯不等于强迫症', 'score': 0.4690408706665039}
+  - {'source': '08_强迫症科普.md', 'doc_id': 'ocd_education_001', 'source_ids': 'WHO_OCD_FACTSHEET_2023', 'section_path': '强迫症科普：反复想法、重复行为与求助 > 基本认识', 'score': 0.6197583675384521}
+  - {'source': '08_强迫症科普.md', 'doc_id': 'ocd_education_001', 'source_ids': 'WHO_OCD_FACTSHEET_2023', 'section_path': '强迫症科普：反复想法、重复行为与求助 > 来源与待补充事项', 'score': 0.771682620048523}
+
+[HIT] KB018: PHQ-9 是什么量表？
+ expected= ['PHQ9_KROENKE_2001']  found= ['GAD7_SPITZER_2006', 'PHQ9_KROENKE_2001']
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 两种量表的用途', 'score': 0.5146934986114502}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 常见分数区间', 'score': 0.6043072938919067}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > PHQ-9第9题的安全处理', 'score': 0.7064648270606995}
+
+[HIT] KB019: PHQ-9 得了 12 分是不是确诊抑郁症？
+ expected= ['PHQ9_KROENKE_2001']  found= ['GAD7_SPITZER_2006', 'PHQ9_KROENKE_2001']
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 分数不等于诊断', 'score': 0.5891622304916382}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 两种量表的用途', 'score': 0.5899994373321533}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > PHQ-9第9题的安全处理', 'score': 0.6689601540565491}
+
+[HIT] KB020: GAD-7 的分数可以直接诊断焦虑症吗？
+ expected= ['GAD7_SPITZER_2006']  found= ['GAD7_SPITZER_2006', 'PHQ9_KROENKE_2001']
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 分数不等于诊断', 'score': 0.5973387360572815}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 两种量表的用途', 'score': 0.6387423276901245}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 常见分数区间', 'score': 0.6907470226287842}
+
+[HIT] KB021: PHQ-9 第九题非零应该怎么处理？
+ expected= ['NHC_12356_2024', 'PHQ9_KROENKE_2001']  found= ['GAD7_SPITZER_2006', 'PHQ9_KROENKE_2001']
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > PHQ-9第9题的安全处理', 'score': 0.42340683937072754}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 两种量表的用途', 'score': 0.8841433525085449}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 常见分数区间', 'score': 0.8843083381652832}
+
+[HIT] KB022: 抗抑郁药吃了不舒服怎么办？
+ expected= ['NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']  found= ['NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 常见问题如何处理', 'score': 0.5835537910461426}
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 有哪些帮助方式', 'score': 0.8001410961151123}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 基本原则', 'score': 0.8182976841926575}
+
+[HIT] KB023: 忘记服药可以下一次加倍吃吗？
+ expected= ['NMPA_OFFICIAL_PORTAL']  found= ['NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 常见问题如何处理', 'score': 0.6948584914207458}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 基本原则', 'score': 0.8296014666557312}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 知识库维护要求', 'score': 0.8892034292221069}
+
+[HIT] KB024: 我感觉好转了，可以自己停抗抑郁药吗？
+ expected= ['NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']  found= ['NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 有哪些帮助方式', 'score': 0.6767987012863159}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 常见问题如何处理', 'score': 0.7167599201202393}
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 什么时候应尽快求助', 'score': 0.7676761746406555}
+
+[HIT] KB025: 处方药可以和酒一起吃吗？
+ expected= ['NMPA_OFFICIAL_PORTAL']  found= ['NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 基本原则', 'score': 0.7688261270523071}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 常见问题如何处理', 'score': 0.7885051965713501}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 适用范围', 'score': 0.8913538455963135}
+
+[HIT] KB026: 怎样查询药品的正式说明书？
+ expected= ['NMPA_OFFICIAL_PORTAL']  found= ['NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 知识库维护要求', 'score': 0.6703555583953857}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 基本原则', 'score': 0.7569276094436646}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 适用范围', 'score': 0.7611424922943115}
+
+[HIT] KB027: 在中国可以拨打哪个全国统一心理援助热线？
+ expected= ['NHC_12356_2024']  found= ['NHC_12356_2024', 'NHC_SERVICES_2025']
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 全国统一心理援助热线12356', 'score': 0.3189508318901062}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 可以从哪里开始', 'score': 0.6577502489089966}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 地方资源数据要求', 'score': 0.734493613243103}
+
+[HIT] KB028: 心理援助热线可以提供什么帮助？
+ expected= ['NHC_12356_2024']  found= ['NHC_12356_2024', 'NHC_SERVICES_2025']
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 全国统一心理援助热线12356', 'score': 0.4028824269771576}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 可以从哪里开始', 'score': 0.5811738967895508}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 如何选择服务', 'score': 0.6618281006813049}
+
+[HIT] KB029: 我应该去心理咨询还是医院心理门诊？
+ expected= ['NHC_12356_2024', 'NHC_SERVICES_2025']  found= ['NHC_12356_2024', 'NHC_SERVICES_2025']
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 可以从哪里开始', 'score': 0.5700954794883728}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 如何选择服务', 'score': 0.6614953279495239}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 全国统一心理援助热线12356', 'score': 0.7101083993911743}
+
+[HIT] KB030: 如何核实当地心理门诊的地址和开放时间？
+ expected= ['NHC_SERVICES_2025']  found= ['NHC_12356_2024', 'NHC_SERVICES_2025']
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 地方资源数据要求', 'score': 0.47484636306762695}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 可以从哪里开始', 'score': 0.5028650760650635}
+  - {'source': '11_专业服务与求助导航.md', 'doc_id': 'help_navigation_001', 'source_ids': 'NHC_12356_2024,NHC_SERVICES_2025', 'section_path': '如何寻找心理健康与精神卫生服务 > 全国统一心理援助热线12356', 'score': 0.5461007356643677}
+
+[HIT] KB031: 如果我现在可能马上伤害自己怎么办？
+ expected= ['NHC_12356_2024', 'WHO_DEPRESSION_ZH_2026']  found= ['NHC_12356_2024', 'WHO_DEPRESSION_ZH_2026', 'WHO_MENTAL_DISORDERS_ZH_2026', 'WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '12_危机安全与陪伴支持.md', 'doc_id': 'crisis_support_001', 'source_ids': 'NHC_12356_2024,WHO_DEPRESSION_ZH_2026', 'section_path': '心理危机中的安全支持与陪伴 > 如果用户表示可能立即伤害自己', 'score': 0.6100174188613892}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 何时不应只靠自助', 'score': 0.6907781362533569}
+  - {'source': '01_心理健康基础知识.md', 'doc_id': 'mh_literacy_001', 'source_ids': 'WHO_MENTAL_DISORDERS_ZH_2026,WHO_STRESS_GUIDE_2020', 'section_path': '心理健康基础知识：什么时候需要关注自己的状态 > 什么时候应尽快求助', 'score': 0.7558093070983887}
+
+[HIT] KB032: 朋友说不想活了，我应该怎么回应？
+ expected= ['NHC_12356_2024', 'WHO_DEPRESSION_ZH_2026']  found= ['NHC_12356_2024', 'WHO_DEPRESSION_ZH_2026', 'WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 家人和朋友可以做什么', 'score': 0.8582661151885986}
+  - {'source': '12_危机安全与陪伴支持.md', 'doc_id': 'crisis_support_001', 'source_ids': 'NHC_12356_2024,WHO_DEPRESSION_ZH_2026', 'section_path': '心理危机中的安全支持与陪伴 > 如果用户表示可能立即伤害自己', 'score': 0.8706966638565063}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 保持支持性连接', 'score': 0.8889992237091064}
+
+[HIT] KB033: 用户说自己已经服用了可能危及生命的药物，平台应如何回应？
+ expected= ['NHC_12356_2024']  found= ['NHC_12356_2024', 'NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']
+  - {'source': '12_危机安全与陪伴支持.md', 'doc_id': 'crisis_support_001', 'source_ids': 'NHC_12356_2024,WHO_DEPRESSION_ZH_2026', 'section_path': '心理危机中的安全支持与陪伴 > 如果用户表示可能立即伤害自己', 'score': 0.6458680033683777}
+  - {'source': '12_危机安全与陪伴支持.md', 'doc_id': 'crisis_support_001', 'source_ids': 'NHC_12356_2024,WHO_DEPRESSION_ZH_2026', 'section_path': '心理危机中的安全支持与陪伴 > 如果用户表达痛苦但未说明立即危险', 'score': 0.7318676710128784}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 基本原则', 'score': 0.7353304624557495}
+
+[MISS] KB034: 知识库没有相关证据时，能否编造一个指南来源？
+ expected= ['WHO_MENTAL_DISORDERS_ZH_2026']  found= ['NHC_12356_2024', 'NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 知识库维护要求', 'score': 0.8393994569778442}
+  - {'source': '12_危机安全与陪伴支持.md', 'doc_id': 'crisis_support_001', 'source_ids': 'NHC_12356_2024,WHO_DEPRESSION_ZH_2026', 'section_path': '心理危机中的安全支持与陪伴 > 工程要求', 'score': 0.8944898247718811}
+  - {'source': '12_危机安全与陪伴支持.md', 'doc_id': 'crisis_support_001', 'source_ids': 'NHC_12356_2024,WHO_DEPRESSION_ZH_2026', 'section_path': '心理危机中的安全支持与陪伴 > 适用范围', 'score': 0.9265620112419128}
+
+[HIT] KB035: 帮我直接诊断我是不是抑郁症。
+ expected= ['WHO_DEPRESSION_ZH_2026']  found= ['WHO_DEPRESSION_ZH_2026']
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 不能仅凭一项症状自我诊断', 'score': 0.5364784598350525}
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 抑郁障碍是什么', 'score': 0.6613895893096924}
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 什么时候应尽快求助', 'score': 0.6765776872634888}
+
+[HIT] KB036: 告诉我应该服用哪种抗抑郁药和具体剂量。
+ expected= ['NMPA_OFFICIAL_PORTAL']  found= ['NMPA_OFFICIAL_PORTAL', 'WHO_DEPRESSION_ZH_2026']
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 有哪些帮助方式', 'score': 0.6990445852279663}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 适用范围', 'score': 0.7878947257995605}
+  - {'source': '10_精神科药物安全教育.md', 'doc_id': 'medication_safety_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026,NMPA_OFFICIAL_PORTAL', 'section_path': '精神科药物安全教育：用药问题应如何求助 > 常见问题如何处理', 'score': 0.7923020124435425}
+
+[HIT] KB037: GAD-7 低分就能保证没有焦虑问题吗？
+ expected= ['GAD7_SPITZER_2006']  found= ['GAD7_SPITZER_2006', 'PHQ9_KROENKE_2001']
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 分数不等于诊断', 'score': 0.686796247959137}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 常见分数区间', 'score': 0.799065351486206}
+  - {'source': '09_PHQ9与GAD7量表解释.md', 'doc_id': 'screening_scales_001', 'source_ids': 'PHQ9_KROENKE_2001,GAD7_SPITZER_2006', 'section_path': 'PHQ-9与GAD-7：筛查分数如何理解 > 两种量表的用途', 'score': 0.8071052432060242}
+
+[MISS] KB038: 长期情绪低落并影响工作，下一步可以做什么？
+ expected= ['NHC_SERVICES_2025', 'WHO_DEPRESSION_ZH_2026']  found= ['WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 一个短暂的“停下来”练习', 'score': 0.6638264656066895}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 何时不应只靠自助', 'score': 0.6950404644012451}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 把问题拆小', 'score': 0.6962695121765137}
+
+[HIT] KB039: 我想了解压力管理的权威自助资料。
+ expected= ['WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']  found= ['WHO_SELFHELP_2026', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 来源与边界', 'score': 0.41113704442977905}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 何时不应只靠自助', 'score': 0.5933091640472412}
+  - {'source': '02_压力应对与情绪调节.md', 'doc_id': 'stress_coping_001', 'source_ids': 'WHO_STRESS_GUIDE_2020,WHO_SELFHELP_2026', 'section_path': '压力应对与情绪调节：可尝试的基础方法 > 把问题拆小', 'score': 0.6347423791885376}
+
+[MISS] KB040: 精神障碍是否有有效的治疗和支持方式？
+ expected= ['WHO_MENTAL_DISORDERS_ZH_2026']  found= ['WHO_ANXIETY_ZH_2025', 'WHO_DEPRESSION_ZH_2026', 'WHO_SCHIZOPHRENIA_ZH_2025', 'WHO_STRESS_GUIDE_2020']
+  - {'source': '04_抑郁障碍科普.md', 'doc_id': 'depression_education_001', 'source_ids': 'WHO_DEPRESSION_ZH_2026', 'section_path': '抑郁障碍科普：常见表现、支持与就医 > 有哪些帮助方式', 'score': 0.42152851819992065}
+  - {'source': '07_精神分裂症科普.md', 'doc_id': 'schizophrenia_education_001', 'source_ids': 'WHO_SCHIZOPHRENIA_ZH_2025', 'section_path': '精神分裂症科普：症状理解、治疗与反污名 > 治疗与康复', 'score': 0.5625348687171936}
+  - {'source': '05_焦虑障碍科普.md', 'doc_id': 'anxiety_education_001', 'source_ids': 'WHO_ANXIETY_ZH_2025,WHO_STRESS_GUIDE_2020', 'section_path': '焦虑障碍科普：担忧、身体反应与专业支持 > 可以尝试的支持方式', 'score': 0.5822805166244507}
+
+这是检索来源命中评测，不等于医学正确性或临床有效性验证。

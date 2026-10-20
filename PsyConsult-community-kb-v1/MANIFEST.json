@@ -1,0 +1,308 @@
+{
+  "package": "PsyConsult-community-kb-v1.0.3",
+  "generated_date": "2026-10-20",
+  "file_count_excluding_manifest": 60,
+  "manifest_excludes_self": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5438,
+      "sha256": "5245fc3e36a0abe99edd9cec5356d89a59cc624cf92c08692afdc2a02c94d396"
+    },
+    {
+      "path": "docs/接入与安全检查清单.md",
+      "bytes": 1433,
+      "sha256": "851a51b7290db3b0c93ba2dc9f95721e4c745ec01fecf5f30c173d0902e6e415"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/01_心理健康基础知识.md",
+      "bytes": 3416,
+      "sha256": "0a5e3ed5f3256b8c9d92a55221edeec1afeceb3f4f0b4ee5d0f965fcef6e76e2"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/02_压力应对与情绪调节.md",
+      "bytes": 3369,
+      "sha256": "e306814bfc529f93edd70ac9ebf3c872a6edfaf7fe41e45c3a2bfec5025205b5"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/03_睡眠问题与求助.md",
+      "bytes": 2084,
+      "sha256": "93a7c82ab0670d7524ed0c6620406a423c3f8bb86709e89b183b079306b52bc3"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/04_抑郁障碍科普.md",
+      "bytes": 2878,
+      "sha256": "e4390637c1ce0744df20f1f624af9f7e2d0c4271781b373ce3976709b6f754f5"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/05_焦虑障碍科普.md",
+      "bytes": 2150,
+      "sha256": "42199832c67c3f4d2749028c938593b82c80fc28bf52087cd2681b9422717b9d"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/06_双相情感障碍科普.md",
+      "bytes": 2485,
+      "sha256": "c63dfcb90f60499afe2cf4f15a2969fe9a5a8be497da3e08e24d8d446a524e67"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/07_精神分裂症科普.md",
+      "bytes": 1881,
+      "sha256": "39204a85a2871fd220b6f0aa669b1f644e3f733cc089185aaaf056190df935ae"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/08_强迫症科普.md",
+      "bytes": 1588,
+      "sha256": "9fc265a1342e8ff78640b4dbfb31d9ee19c2f310c5f7b31c17a172f1ae07e302"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/09_PHQ9与GAD7量表解释.md",
+      "bytes": 3992,
+      "sha256": "2490b58a060fa0bae957c33e06a662e06684949e7c14a74ce1fbc398dba9833d"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/10_精神科药物安全教育.md",
+      "bytes": 3112,
+      "sha256": "1531c17e246990a6a538fda17322bdefe87947d7edde17ab7367c8490051b901"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/11_专业服务与求助导航.md",
+      "bytes": 3687,
+      "sha256": "d93d1010b7a7cc139147ad622ffe407e5ff5d92e32ef5a4c0a0c119ef1abe219"
+    },
+    {
+      "path": "knowledge_base/community_mental_health/12_危机安全与陪伴支持.md",
+      "bytes": 3240,
+      "sha256": "fb5d60b7809d9c02f94a58dbc6c415ae585825fd77fad2ea345464186bfb4e1d"
+    },
+    {
+      "path": "knowledge_base/eval/README.md",
+      "bytes": 820,
+      "sha256": "f8b2532e2aa906550c1768572880b1625e49e74275bbd2d24674277bddaebcc9"
+    },
+    {
+      "path": "knowledge_base/eval/behavior_cases.jsonl",
+      "bytes": 362,
+      "sha256": "71f1710fb569e0f8289fe059e85807619b3c79157569f616a43d810d629d6d65"
+    },
+    {
+      "path": "knowledge_base/eval/retrieval_cases.jsonl",
+      "bytes": 7134,
+      "sha256": "17c8c6074922b34839bcc50e87cea9a0b84798aafe1866d4b9fbc248f3c908d6"
+    },
+    {
+      "path": "knowledge_base/eval/targeted_retrieval_cases.jsonl",
+      "bytes": 1791,
+      "sha256": "30b8d060acfe260ef38a720256e5414545fc18eec9cdfe29c1e3641f05c7881f"
+    },
+    {
+      "path": "knowledge_base/section_sources.json",
+      "bytes": 11065,
+      "sha256": "edd66ed44a091f3d26e5928ef3c015e22dc42fdff7ef235396095252238d2df9"
+    },
+    {
+      "path": "knowledge_base/source_registry.csv",
+      "bytes": 4455,
+      "sha256": "210bb304100d2ba7fd0e452607f3b59c171c1440d0120b4390cd99b8e086b886"
+    },
+    {
+      "path": "reports/round2/REPORT.md",
+      "bytes": 12676,
+      "sha256": "40c19a4ea6f8731a0ea8bf12f576f4353fff0dba4b6850fe8021226f4388461a"
+    },
+    {
+      "path": "reports/round2/after.json",
+      "bytes": 1127478,
+      "sha256": "bde6482a1670e77168a86c4d92f812d9bd2b1b225abde50401242b8d4a19fff3"
+    },
+    {
+      "path": "reports/round2/after_targeted.json",
+      "bytes": 233174,
+      "sha256": "f4451b2b09002ca856ec103273cf13fc5f245710b2bfcdda0fedea6d36097ded"
+    },
+    {
+      "path": "reports/round2/application_queries.json",
+      "bytes": 33121,
+      "sha256": "e0783e76aa8c66b090fa53daa52d004f366e8b36f1205a2356ee28f2ae15e45e"
+    },
+    {
+      "path": "reports/round2/application_queries_final.json",
+      "bytes": 33467,
+      "sha256": "54a86eb503a8c8d1df4b631715d2a39713f8bbd033d78322adc6391f41b0204e"
+    },
+    {
+      "path": "reports/round2/baseline.json",
+      "bytes": 967320,
+      "sha256": "492ba276fc47c183dbf5f6615d214730b4f99e84b2b39ee9c40c955ae1ba550b"
+    },
+    {
+      "path": "reports/round2/baseline_targeted.json",
+      "bytes": 193415,
+      "sha256": "5e0dd3f58028e294b315a223e6f54f2ae7d1bd5689cc37689ed51a89d95ba9f6"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/01_心理健康基础知识.md",
+      "bytes": 2828,
+      "sha256": "1880ad44e9afcbdc6a259e7f7b4ea29d6ee3c1deb133183a6ad87bef0eb8c31e"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/02_压力应对与情绪调节.md",
+      "bytes": 3142,
+      "sha256": "7e6a24176bd9fdf031d61e273db583e414252704ae87ef18c2a9f3befa0169d1"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/03_睡眠问题与求助.md",
+      "bytes": 2283,
+      "sha256": "767ebb5b3d4cb973eb90baf3b2d084e68742a2195f362928edf143026a537540"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/04_抑郁障碍科普.md",
+      "bytes": 2313,
+      "sha256": "46c41d63088facfae91bbdee3dc3602eba6e091e79fbf920a2c65bce66163fed"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/05_焦虑障碍科普.md",
+      "bytes": 2152,
+      "sha256": "8abf4a8ef46d9ab047c2ea8d3683ebc5c835db82423d3db847bad81c25a042cf"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/06_双相情感障碍科普.md",
+      "bytes": 1911,
+      "sha256": "f159affbc51718f64632fe748dc45fb503cbc57423b7cebfd6d440034c89643b"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/07_精神分裂症科普.md",
+      "bytes": 1896,
+      "sha256": "6ebaf094b3162bc961573941adbbe007e4fa7a20df4c4fbe6db1aa6a3f6d774d"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/08_强迫症科普.md",
+      "bytes": 1702,
+      "sha256": "68be887780b9051822bc131beacc28343773a3f036cf4c9c84347a42908b7613"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/09_PHQ9与GAD7量表解释.md",
+      "bytes": 2620,
+      "sha256": "32f953e6e8e1cbcbac4afce0bd50615ca10517bbb9d4f443d700bad75dd330a6"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/10_精神科药物安全教育.md",
+      "bytes": 2778,
+      "sha256": "8193490560b17160387f914bd28c787c55b875e471726ade802cfe72ed40394a"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/11_专业服务与求助导航.md",
+      "bytes": 2899,
+      "sha256": "a1006484def474c3a9cba35de74d14296ec62862e56c27640055b94641336334"
+    },
+    {
+      "path": "reports/round2/before/community_mental_health/12_危机安全与陪伴支持.md",
+      "bytes": 2841,
+      "sha256": "d901524ba70ba0f400a4dfc2bd9878bea61068c925955ac12a596df2057439fb"
+    },
+    {
+      "path": "reports/round2/before/legacy_baseline.txt",
+      "bytes": 38550,
+      "sha256": "6fcb16e10d58a3b57c051b20eb103cc3a737d03ed88aa2dc8fdb43d0ec9de579"
+    },
+    {
+      "path": "reports/round2/before/retrieval_cases.jsonl",
+      "bytes": 7134,
+      "sha256": "17c8c6074922b34839bcc50e87cea9a0b84798aafe1866d4b9fbc248f3c908d6"
+    },
+    {
+      "path": "reports/round2/before/source_registry.csv",
+      "bytes": 3590,
+      "sha256": "5cac0e08d8057b1e1a96f5c53c250500acf16874a69dc3aeb0a3686242b0cc74"
+    },
+    {
+      "path": "reports/round2/behavior.json",
+      "bytes": 3890,
+      "sha256": "1039fb9250757d636ed49aa8039f22645f211449f3d70c341d303f24d4506bfd"
+    },
+    {
+      "path": "reports/round2/chunk_audit.json",
+      "bytes": 85361,
+      "sha256": "f7c463790dd9e12f67216fcfbd32145fb6181721633a5ef6cbfe4bcc3a3b896a"
+    },
+    {
+      "path": "reports/round2/database_verification.json",
+      "bytes": 488,
+      "sha256": "9c54e02d2223f6585d08117fc7f026eaa8079b0635d7028e1680df6c6271f03f"
+    },
+    {
+      "path": "reports/round2/http_queries.json",
+      "bytes": 24789,
+      "sha256": "e8e88bb4fcd269b12b8591ee70c8735cabd39dbb138e85e8204eefa6c2885171"
+    },
+    {
+      "path": "reports/round2/http_queries_final.json",
+      "bytes": 38589,
+      "sha256": "c7f9286b4f1032371d42bbf9103a2bd9cc68c70b09964176c9272be6e292a534"
+    },
+    {
+      "path": "reports/round2/old_collection_after.json",
+      "bytes": 4419,
+      "sha256": "f85f49ae0559c8166a35102fa52f790168d730c38e20799d984292f6ef3e32c3"
+    },
+    {
+      "path": "reports/round2/old_collection_before.json",
+      "bytes": 4419,
+      "sha256": "f85f49ae0559c8166a35102fa52f790168d730c38e20799d984292f6ef3e32c3"
+    },
+    {
+      "path": "reports/round2/pytest.txt",
+      "bytes": 687,
+      "sha256": "505bb3e58fc41213d5ee4285e865445014ca8c7df85f88506357d522bd7f728e"
+    },
+    {
+      "path": "scripts/audit_knowledge_base.py",
+      "bytes": 2165,
+      "sha256": "73822295bcd3524b95d4b03cb1e3fb6f4bcfa6b35713ac9bc8fe91699989d1d8"
+    },
+    {
+      "path": "scripts/check_application_queries.py",
+      "bytes": 2644,
+      "sha256": "a547fd5fb96d7a7548b9e7ba246d1172ecfeb5e6b8660bf45d86067f694c2271"
+    },
+    {
+      "path": "scripts/check_http_queries.py",
+      "bytes": 2246,
+      "sha256": "9ca5d34cda026de994571ee8a57fd599d80738c070e6a054687154823ba94b23"
+    },
+    {
+      "path": "scripts/collection_snapshot.py",
+      "bytes": 1125,
+      "sha256": "216c4e5efd5a0b39d810395ebf15de38163080a3e0b9952b26ce4b78dd344707"
+    },
+    {
+      "path": "scripts/evaluate_behavior.py",
+      "bytes": 2491,
+      "sha256": "63de79e155a3b0e7d25c7560a8bce1ba961f8e8790922501924f535907f90d7e"
+    },
+    {
+      "path": "scripts/evaluate_retrieval.py",
+      "bytes": 4002,
+      "sha256": "45db57f080a63f9d52cc365cca029fad1831f4e632fefb07cb3920d8a3a1d8cc"
+    },
+    {
+      "path": "scripts/find_collection_config.sh",
+      "bytes": 557,
+      "sha256": "01423b9ae6dd73efc3730070412c0dea4df592497cde79ae22247775d0b0f8d9"
+    },
+    {
+      "path": "scripts/ingest_knowledge_base.py",
+      "bytes": 9243,
+      "sha256": "8e14ceca626c8ece9c93ce1d26a604c7a77a414b8622c39c48b8c05fbbda5a94"
+    },
+    {
+      "path": "scripts/kb_common.py",
+      "bytes": 1552,
+      "sha256": "db7637d6d6708ebfc99190b1489a7a2c7e27dc9d18393e61a46e04de6173cd2b"
+    },
+    {
+      "path": "scripts/verify_collection.py",
+      "bytes": 2454,
+      "sha256": "dc039508c6fb221274dcbaa749f01f7253eee833292eae8fb98b6119715b5ac7"
+    }
+  ]
+}

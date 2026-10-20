@@ -1,0 +1,15 @@
+{
+  "community_mental_health_docs_v1_0_2": {
+    "sample_vector_dimension": 1024,
+    "sample_max_abs_difference_v3": 0.00015576183795928955,
+    "sample_cosine_v3": 0.9999992786281082
+  },
+  "community_mental_health_docs_v1_0_3": {
+    "sample_vector_dimension": 1024,
+    "sample_max_abs_difference_v3": 0.00015576183795928955,
+    "sample_cosine_v3": 0.9999992786281082
+  },
+  "all_new_rows_verified": 56,
+  "old_collection_unchanged": true,
+  "embedding_model": "text-embedding-v3"
+}
