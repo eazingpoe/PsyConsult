@@ -1,98 +1,99 @@
-<div align="center">
+# PsyConsult｜心晴社区
 
-# PsyConsult · 心晴社区
+**面向心理健康科普、量表筛查、患者档案与心理测评报告辅助解读的 Web 原型。**
 
-**面向心理健康科普、量表筛查与测评报告辅助解读的 Web 原型**
+PsyConsult 将对话问答、心理健康自评、患者档案、录音转写和报告分析整合到一个 Web 工作台中，探索更完整的心理健康信息服务流程。
 
-以多智能体工作流、知识检索和结构化档案为基础，探索更清晰、更可追溯的心理健康信息服务体验。
-
-</div>
-
-> **重要声明**：PsyConsult 是开发原型，不是临床诊断系统。量表结果和报告解读仅用于筛查、科普与沟通辅助，不能替代专业人员评估、诊断或治疗。项目尚未完成临床有效性验证、监管合规验证或生产级安全评估。
+> **重要声明**：PsyConsult 是开发与演示原型，不是临床诊断系统。量表分数和模型生成的报告解读不能单独用于诊断或治疗决策；系统尚未完成临床有效性验证、监管合规验证或生产级安全评估。请勿在公开演示或未经授权的部署中使用真实患者资料。
 
 ## 功能概览
 
-| 模块 | 功能 |
+| 模块 | 当前功能 |
 |---|---|
-| 心理健康问答 | 普通问答、连续对话、SSE 流式输出 |
-| 安全支持 | 对部分高风险表达进行安全分流和求助提示 |
+| 对话问答 | 多轮问答、SSE 流式输出 |
+| 安全支持 | 对部分高风险表达进行安全分流，并提供专业求助提示 |
 | 心理健康自评 | PHQ-9、GAD-7 计分及筛查用途说明 |
-| 患者档案 | 基本资料、量表结果、历史记录、报告与分析记录 |
-| 录音转文字 | 浏览器录音与后端转录接口 |
-| 测评报告分析 | 支持 PDF、DOCX、PNG、JPG/JPEG；文本提取、OCR 与结构化解读 |
-| 报告归档 | 将报告及分析记录关联到所选患者档案 |
+| 患者档案 | 基本资料、量表结果、历史记录、报告管理 |
+| 录音转写 | 浏览器录音并调用后端转写接口 |
+| 测评报告分析 | 支持 PDF、DOCX、PNG、JPG/JPEG；提取文本/OCR 后生成结构化辅助解读 |
+| 报告归档 | 将报告与分析记录关联至所选患者档案 |
+
+## 系统截图
+
+截图应从本地实际运行的 PsyConsult 页面获取；本仓库不使用仿制图冒充真实系统截图。启动前后端并准备虚构测试数据后，运行：
+
+```bash
+python -m pip install playwright
+python -m playwright install chromium
+python tools/capture_screenshots.py --url http://127.0.0.1:5173
+```
+
+脚本会打开浏览器，提示你切换到对应功能页面后截取真实画面，并将截图保存到 `docs/screenshots/`，同时更新本节。截图前请确认页面中没有真实姓名、患者 ID、报告原文、访问令牌或其他个人信息。
+
+<!-- SCREENSHOTS_START -->
+### 聊天主界面
+
+![聊天主界面](docs/screenshots/01-chat.png)
+
+### 心理健康自评
+
+![心理健康自评](docs/screenshots/02-assessment.png)
+
+### 患者档案
+
+![患者档案](docs/screenshots/03-patient-archive.png)
+
+### 心理测评报告分析
+
+![心理测评报告分析](docs/screenshots/04-report-analysis.png)
+
+### 录音转写
+
+![录音转写](docs/screenshots/05-recording.png)
+<!-- SCREENSHOTS_END -->
 
 ## 技术栈
 
 - **前端**：Vue 3、TypeScript、Vite
-- **后端 API**：Python、FastAPI
-- **智能体工作流**：LangChain / LangGraph 相关组件
-- **检索与会话状态**：项目中的向量检索工具、Redis 相关组件
+- **后端**：Python、FastAPI
+- **智能体与工作流**：LangChain / LangGraph 相关组件
+- **会话与检索基础设施**：Redis 及项目配置的向量检索组件
 - **文档处理**：PDF 文本提取、扫描 PDF 处理、图片 OCR、DOCX 文档处理
-- **测试**：pytest、Vue TypeScript 检查与前端构建
+- **测试**：pytest、前端 TypeScript 检查与 Vite 构建
 
-> 具体依赖版本和环境变量以仓库中的依赖文件及 `app/app_config/settings.py` 为准。请勿将真实 API Key、密码、患者资料或本地 `.env` 文件提交到 Git。
-
-## 系统架构
-
-```mermaid
-flowchart TB
-    U[用户 / 浏览器] --> FE[Vue 3 前端]
-    FE -->|REST API / SSE| API[FastAPI]
-    API --> CHAT[聊天服务]
-    CHAT --> WF[LangGraph 工作流 / Agent]
-    WF --> RAG[知识检索与工具]
-    WF --> SAFE[安全分流与提示]
-    API --> ASSESS[量表计分服务]
-    API --> PATIENT[患者档案与历史记录]
-    API --> REPORT[报告提取 / OCR / 分析]
-    API --> TRANSCRIBE[录音转写接口]
-    CHAT --> REDIS[Redis 相关会话/检索组件]
-```
+具体依赖和必需环境变量以仓库中的 `agent/requirements.txt`、`app/app_config/settings.py`、`agent/config/` 等配置为准。
 
 ## 项目结构
 
 ```text
 .
-├── agent/                  # 智能体、工作流、工具与相关测试
-├── app/                    # FastAPI 应用、路由、服务、Schema 与测试
-├── front/clinical_cds/     # Vue 3 + TypeScript 前端
-├── docker/                 # Docker 相关文件（使用前请核对配置）
-├── learn/                  # 项目学习与开发说明
-├── PsyConsult-community-kb-v1/ # 社区心理健康知识库材料
-└── README.md
+├── agent/                       # Agent、工作流、工具与相关测试
+├── app/                         # FastAPI 应用、路由、服务、Schema 与测试
+├── front/clinical_cds/          # Vue 3 + TypeScript 前端
+├── docker/                      # 本地基础服务配置（如当前分支包含）
+├── learn/                       # 学习与开发文档
+├── PsyConsult-community-kb-v1/  # 社区心理健康知识库材料（如当前分支包含）
+├── docs/                        # 安装、功能报告、测试与截图
+└── tools/                       # 截图与公开发布前自查脚本
 ```
 
-## 本地运行
+## 快速开始
 
-### 1. 环境准备
+详细步骤见 [安装与运行说明](docs/INSTALL.md)。
 
-建议使用 Python 3.12、Node.js 与 npm。项目还可能需要 Redis、模型服务/API 凭据及向量检索相关配置。
+### 1. 准备依赖
 
-先检查项目配置和依赖文件：
-
-```bash
-# 在项目根目录执行
-find . -maxdepth 3 \( -name "requirements*.txt" -o -name "pyproject.toml" -o -name ".env.example" \) -print
-```
-
-不要把真实密钥写进 README、代码或公开提交。若没有 `.env.example`，请根据 `app/app_config/settings.py` 和实际服务配置建立本地环境变量；不要把本地 `.env` 上传到 GitHub。
-
-### 2. 安装后端依赖
-
-在已经配置好项目所需环境变量和服务的前提下：
+建议使用 Python 3.12、Node.js/npm、Docker Compose（若使用仓库提供的基础服务），并准备项目所需的模型服务/API 凭据。
 
 ```bash
 conda activate psyconsult
 cd /path/to/PsyConsult
-
-# 先确认该文件包含当前应用需要的依赖
 python -m pip install -r agent/requirements.txt
 ```
 
-如果项目依赖被拆分在多个 requirements 文件中，请按实际文件分别安装。首次启动前，确认 Redis 和模型服务可以访问。
+如没有名为 `psyconsult` 的 Conda 环境，请先创建环境。请先阅读配置代码，确认当前分支所需环境变量；不要将真实 `.env` 文件、API Key 或 Token 提交到 Git。
 
-### 3. 启动后端
+### 2. 启动后端
 
 ```bash
 conda activate psyconsult
@@ -104,14 +105,12 @@ python -m uvicorn app.app_main:app \
   --port 5000
 ```
 
-检查 API 文档是否可访问：
-
-- OpenAPI JSON：`http://127.0.0.1:5000/openapi.json`
+- OpenAPI：`http://127.0.0.1:5000/openapi.json`
 - Swagger UI：`http://127.0.0.1:5000/docs`
 
-### 4. 启动前端
+### 3. 启动前端
 
-新开一个终端：
+新开终端：
 
 ```bash
 cd /path/to/PsyConsult/front/clinical_cds
@@ -119,79 +118,59 @@ npm install
 npm run dev
 ```
 
-按 Vite 在终端打印的本地地址打开网页。开发环境的 `/api` 代理配置请以 `front/clinical_cds/vite.config.ts` 为准。
+请使用 Vite 终端实际打印的地址访问网页，默认通常为 `http://127.0.0.1:5173`。
 
-### 5. 构建前端
-
-```bash
-cd /path/to/PsyConsult/front/clinical_cds
-npm run build
-```
-
-## 主要接口
-
-以下为开发过程中核对过的接口示例；完整接口以运行中的 `/openapi.json` 为准。
-
-| 接口 | 用途 |
-|---|---|
-| `POST /api/chat/report-analysis` | 在聊天场景上传并分析测评报告 |
-| `GET /api/patients` | 查询患者档案列表 |
-| `POST /api/patients` | 创建患者档案 |
-| `GET/PATCH/DELETE /api/patients/{patient_id}` | 查看、更新或删除患者档案 |
-| `GET/POST /api/patients/{patient_id}/assessments` | 查询或保存量表结果 |
-| `GET /api/patients/{patient_id}/history` | 查询患者历史记录 |
-| `GET/POST /api/patients/{patient_id}/reports` | 查询或归档报告 |
-| `POST /api/patients/{patient_id}/reports/{report_id}/analyze` | 对已归档报告执行分析 |
-
-## 测试
-
-在项目根目录执行：
+### 4. 运行测试
 
 ```bash
+# 项目根目录
 conda activate psyconsult
 python -m pytest -q app/test agent/test
-```
 
-前端类型检查与构建：
-
-```bash
+# 前端构建与类型检查
 cd front/clinical_cds
 npm run build
 ```
 
-开发过程曾记录以下结果（**不是当前仓库版本的自动 CI 保证**）：
+历史测试记录和当前已知限制见 [功能报告与测试结果](docs/PROJECT_REPORT.md)。历史通过不代表当前工作区无需重新测试。
 
-- 后端回归测试：82 passed，另有一条 `langchain-community` 弃用警告。
-- 端到端 API 冒烟测试：12/12 项通过。
-- 安全边界测试：8/8 项通过。
-- 报告分析相关的 `app/test` 曾显示 29 passed。
-- 前端构建曾成功完成，但有第三方注释与 bundle 体积警告。
+## 常用接口
 
-每次修改代码后，请在当前提交版本重新运行测试，并记录实际输出。
+接口路径以当前运行版本的 `/openapi.json` 为准。开发过程中核对过的报告和档案接口包括：
 
-## 安全、隐私与适用边界
+| 接口 | 用途 |
+|---|---|
+| `POST /api/chat/report-analysis` | 在聊天场景上传并分析心理测评报告 |
+| `GET /api/patients`、`POST /api/patients` | 查询或创建患者档案 |
+| `GET/PATCH/DELETE /api/patients/{patient_id}` | 查看、更新或删除患者档案 |
+| `GET/POST /api/patients/{patient_id}/assessments` | 查询或保存量表结果 |
+| `GET /api/patients/{patient_id}/history` | 查询患者历史记录 |
+| `GET/POST /api/patients/{patient_id}/reports` | 查询或归档报告 |
+| `POST /api/patients/{patient_id}/reports/{report_id}/analyze` | 分析已归档报告 |
 
-- 不要使用真实患者资料进行公开演示；演示时优先使用明确标注的虚构数据。
-- 不要提交 `.env`、访问令牌、API Key、数据库、录音、上传报告或运行日志。
-- PHQ-9 / GAD-7 结果属于筛查信息，不应单独用于诊断或决定治疗。
-- OCR 可能误识别分数、日期、否定词或量表答案，结果需要人工核对。
-- 安全提示与自动化测试不能证明系统具备危机评估能力，也不能替代当地急救或专业服务。
-- 发布前应核对知识库、第三方文档和数据集的版权、许可及再分发条件。
-- 当前报告归档流程可能重复触发模型分析，因此归档耗时可能较长。
-- 在用于真实场景前，需要进一步完成身份认证、访问控制、审计、数据加密、备份恢复、威胁建模和合规评估。
+## 安全与隐私
 
-## 项目状态
+- 不要提交 `.env`、API Key、Token、密码、私钥、数据库、运行日志、真实患者资料、录音或上传报告。
+- 演示时只使用明确标注的虚构测试数据，并在截图前检查页面内容。
+- OCR 可能误识别分数、日期、否定词或答案，结果必须人工核对。
+- PHQ-9 / GAD-7 是筛查工具，不能单独用于诊断。
+- 公开知识库前，应逐项确认原始材料的版权、许可、署名和再分发条件；仅列出来源 URL 不等于获得复制授权。
+- 在真实场景使用前，需要进一步评估身份认证、患者级访问控制、审计、数据加密、备份恢复和适用法规。
 
-当前定位：**功能验证与演示原型**。
+公开发布前建议执行：
 
-已实现主要业务流程，但仍需完善部署文档、配置模板、截图展示、权限与隐私保护、自动化 CI，以及报告归档性能。
+```bash
+python tools/audit_public_release.py
+```
 
-## 演示与文档
+然后按 [公开发布安全与授权检查表](docs/SECURITY_REVIEW.md) 手工核对。该脚本是辅助筛查工具，不是完整安全审计。
 
-- [项目功能与架构说明](docs/PROJECT_OVERVIEW.md)
-- [演示流程建议](docs/DEMO_SCRIPT.md)
-- [测试与发布检查](docs/TESTING.md)
+## 文档
 
-## 许可
+- [安装与运行说明](docs/INSTALL.md)
+- [功能报告与测试结果](docs/PROJECT_REPORT.md)
+- [公开发布安全与授权检查表](docs/SECURITY_REVIEW.md)
 
-本仓库暂未在本 README 中声明开源许可证。公开使用或再分发前，请由项目维护者确认代码、知识库和第三方材料的授权，并选择合适的许可证。
+## 许可证
+
+当前 README 不声明本项目整体的开源许可证。发布者应先确认自有代码、第三方依赖、知识库材料、数据集及文档的授权，再选择合适的许可证。未核实的第三方材料不应默认按本项目许可证重新授权。
